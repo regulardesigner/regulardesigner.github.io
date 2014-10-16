@@ -1,0 +1,24 @@
+#menu-btn{
+	position:fixed;
+	top:0px;
+	right:0px;
+	width:44px;
+	height:37px;
+	background-color: grey;
+	padding-top:7px;
+	text-decoration:none;
+}
+#menu-btn span {display:block;background-color: #fff;height:3px;width:28px;margin:0 auto;margin-top:5px;}
+
+header{text-align:center;}
+
+body{font-size:62.5%;font-family:sans-serif;}
+
+h1,h2,h3,h4,h5,h6{font-weight:bold;}
+
+h1{font-size:3em;margin-bottom:2em;}
+h2{font-size:2.6em;margin-bottom:1.6em;}
+h3{font-size:2.3em;margin-bottom:1.3em;}
+h4{font-size:2em;margin-bottom:1em;}
+h5{font-size:1.5em;margin-bottom:.5em;}
+h6{font-size:1.3em;margin-bottom:.3em;}				
