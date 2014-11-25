@@ -18,3 +18,5 @@ navi();
 window.addEventListener('resize', navi);
 
 // source : http://goetter.fr/nav/
+
+// email ans phone links encoded by http://hivelogic.com/enkoder/
