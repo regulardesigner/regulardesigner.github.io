@@ -1,4 +1,1 @@
-regulardesigner.github.io
-=========================
-
-my website
+# this is my online porfolio ;)

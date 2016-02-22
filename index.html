@@ -1,61 +1,32 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>regulardesigner - Designing for small and large screens!</title>
-    <script type="text/javascript" src="//use.typekit.net/zvh8xnz.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8" />
+	<title>Regulardesigner - Damien Tailhades Online portfolio</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="prater">Regular Designer</h1>
-    <div id="page">
-        <p class="desc script">Designing for small<br>and large screens!</p>
-		<div class="btn-barre">
-			<script type="text/javascript">
-			//<![CDATA[
-			<!--
-			var x="function f(x,y){var i,o=\"\",l=x.length;for(i=0;i<l;i++){if(i<64)y++;" +
-			"y%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f(\"'6+$=\\" +
-			"\"\\\"!q5}/p +>\\023C\\014K\\006VOM]\\034\\031J\\001U\\021elcr`&`3\\177~/ap" +
-			"sp{\\010Z\\nE@K^m_VQwL\\022P\\021qrkbyq~n3=8275er(j>xi9m*;8.84u;v\\033\\034" +
-			"\\037\\005\\013\\027N\\016U\\005GZW\\004PR@J\\033^Y\\\\\\r\\030SD\\002U\\03" +
-			"7\\025\\037r@v+m,=zzl~~~c.`>bgqgad?(5uw5&cy\\010\\003\\013\\023\\026\\tz\\0" +
-			"05\\025\\033\\021|\\030\\036\\036sl\\021]\\032\\nY\\001\\005\\010ef\\017\\0" +
-			"17\\rbcqsr\\037\\030suw\\024\\025\\020{|}\\022\\023bbb\\017\\010\\002eeh\\0" +
-			"05\\006kom\\002\\0034VRS89WUX56[^]23DAB/(DFG$%KKL!\\\".SK5056[T>:;PQ:? MN[#" +
-			"'&KD(*+@AlC|\\024\\022\\023xy\\026\\026\\030uv\\030\\036\\035rs\\n\\013\\03" +
-			"5\\016\\003\\032\\010\\n\\035\\017\\010\\013`a\\004\\007\\177v{)d\\177gbbn!" +
-			"\\177~}\\022\\023*qre\\17775cki\\006\\007\\021\\006\\027\\002)+SPT9::;6(Z_]" +
-			"23-7!AFE*+\\013JHK ! _KDI446[TO88<QR8 !NO $&KDTT_Hkru\\022NV_QGS]Xu\\010\\0" +
-			"03JP\\025@\\020_@F@PDJ\\003\\020\\023\\020\\027D\\026ai(j7\\005 \\\"(\\013;" +
-			"+#/c6g55=\\020&4>\\02456(=r:06\\022\\0251^O\\n]PZXWN\\025V\\\\RZ\\010[Z\\r^" +
-			"FEPG\\023S\\032\\024\\005)*)j?i:n397b$\\177ai+yftzpz9`$v7@?B=\\035N\\016J\\" +
-			"004WGQS\\000S\\007T\\005H\\017^^[GW[CQ\\032\\020\",64)"                      ;
-			while(x=eval(x));
-			//-->
-			//]]>
-			</script>
-            
-			<script type="text/javascript">
-			//<![CDATA[
-			<!--
-			var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-			"=51){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-			".substr(0,ol);}f(\")84,\\\"{710\\\\500\\\\7,8c/B030\\\\120\\\\[620\\\\520\\" +
-			"\\130\\\\4HW(KJIA^WXT]ZS400\\\\200\\\\220\\\\G8^400\\\\400\\\\220\\\\7~771\\"+
-			"\\000\\\\)?-9%&u17;&}!:/n720\\\\w:;&*&d\\\"\\\\~chQRXHRHN620\\\\CXPYFQ^T\\\""+
-			"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;2=*y))y+" +
-			"84(>i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"    ;
-			while(x=eval(x));
-			//-->
-			//]]>
-			</script>
-            
-        </div>
-    </div>
-	<footer>©2016 regulardesigner.com</footer>
+	<header id="launch">
+		<div id="logo" class="animated fadeIn">Regulardesigner</div>
+		<h1 class="animated fadeIn">Ui designer with development skill<br>for tiny and big screens.</h1>
+		<a href="tel:0685911888" class="phone-call">Call me</a>
+	</header>
+	<script>
+	function launchHeight() {
+		var h = window.innerHeight;
+		var cssH = h - 2;
+		document.getElementById("launch").style['height'] = cssH+"px";
+	}
+	launchHeight();
+	window.onresize = function(event) {
+		launchHeight();
+	};
+	console.log(location.href)
+	</script>
 </body>
 </html>
