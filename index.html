@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title>Besigaer - Damien Tailhades Online portfolio</title>
+	<title>Regulardesigner - Damien Tailhades Online portfolio</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -11,62 +11,21 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<div id="logo" class="animated fadeIn">Besigaer</div>
+	<header id="launch">
+		<div id="logo" class="animated fadeIn">Regulardesigner</div>
 		<h1 class="animated fadeIn">UI/UX designer with development skill<br>for tiny and big screens.</h1>
+		<a href="tel:0685911888" class="phone-call">Call me</a>
 	</header>
-	<section id="hello">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p class="center"><a href="#" class="btn">download my resume</a></p>
-	</section>
-	<section id="portfolio">
-		<div class="project pernod-ricard">
-			<div class="cartel">
-				<div class="cartel-text">
-					<h2>Pernod-Ricard</h2>
-					<p>the top 100 innovation gallery</p>
-				</div>
-			</div>
-		</div>
-		<div class="project argus">
-			<div class="cartel">
-				<div class="cartel-text">
-					<h2>Argus.fr</h2>
-					<p>Argus auto tizen app</p>
-				</div>
-			</div>
-		</div>
-		<div class="project peuplade">
-			<div class="cartel">
-				<div class="cartel-text">
-					<h2>Peuplade</h2>
-					<p>The first micro local network</p>
-				</div>
-			</div>
-		</div>
-		<div class="project peroni-style">
-			<div class="cartel">
-				<div class="cartel-text">
-					<h2>Peroni</h2>
-					<p>Peroni-style app</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>&copy; Besigaer 2015</footer>
-	<script type="text/javascript" src="js/acf.min.js"></script>
-	<script type="text/javascript">
-		_(".cartel").on("mouseover", function(e) {
-    		_(this).addClass("animated fadeIn");
-		});
-		_(".cartel").on("mouseout", function(e) {
-    		_(this).removeClass("animated fadeIn");
-		});
+	<script>
+	function launchHeight() {
+		var h = window.innerHeight;
+		var cssH = h - 2;
+		document.getElementById("launch").style['height'] = cssH+"px";
+	}
+	launchHeight();
+	window.onresize = function(event) {
+		launchHeight();
+	};
 	</script>
 </body>
 </html>
