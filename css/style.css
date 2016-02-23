@@ -19,6 +19,14 @@ header{
 	font-size: 0px;
 }
 
+#logo-screen {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+
 #logo {
 	width:316px;
 	height:86px;
@@ -38,15 +46,21 @@ h1{
 	font-size:20px;
 }
 
-#logo-screen {
-	position:absolute;
-	left:50%;
-	top:50%;
-	transform:translate(-50%,-50%);
-	-webkit-transform:translate(-50%,-50%);
+.btn {
+	margin:20px 5px 0px;
+	margin-top:20px;
+	font-size:12px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-style: normal;
+	padding:6px 10px 6px 10px;
+	color:rgb(35,105,154);
+	background-color:rgba(255,255,255,0.7);
+	border-radius:100px;
 }
 
-.phone-call {
+.phone-call, .contact-email {
 	color:black;
 	font-size:14px;
 	text-decoration:none;
@@ -55,114 +69,29 @@ h1{
 	display:block;
 	position:absolute;
 	background-color:white;
-	height:70px;
-	width:70px;
+	height:60px;
+	width:60px;
 	border-radius:100px;
-	bottom:10px;
-	right:10px;
 	box-shadow:0 0 20px 0 rgba(0,0,0,0.5);
 	text-indent:-3000px;
-	background-image: url("../img/phone-call.png");
-	background-size:65%;
 	background-position:50% 50%;
 	background-repeat: no-repeat;
 }
 
-#hello {
-	margin:80px 80px 50px 80px;
+.phone-call {
+	background-size:65%;
+	background-image: url("../img/phone-call.png");
+	bottom:10px;
+	right:10px;
 }
 
-#hello p {
-	font-style: italic;
-	font-size: 16px;
-	line-height: 25px;
-	margin-bottom: 15px;
+.contact-email {
+	background-size:70%;
+	background-image: url("../img/contact-email.png");
+	bottom:80px;
+	right:10px;
 }
 
-#portfolio {
-	position: relative;
-}
-
-.project {
-	position: relative;
-	width: 50%;
-	height: 400px;
-	float: left;
-	background-color: rgb(47,160,246);
-	background-size: 110%;
-	background-position: 50%;
-    -web-kit-transition: background-size .25s linear;
-    transition: background-size .25s linear;
-}
-
-.project:hover {
- 	background-size: 120%
-}
-
-.pernod-ricard {
-	background-image: url('../img/projects/placeholder-project-one.jpg');
-}
-
-.argus {
-	background-image: url('../img/projects/placeholder-project-two.jpg');
-}
-
-.peroni-style {
-	background-image: url('../img/projects/placeholder-project-one.jpg');
-}
-
-.peuplade {
-	background-image: url('../img/projects/placeholder-project-two.jpg');
-}
-
-.project .cartel {
-	height: 100%;
-	width: 100%;
-	color: white;
-	position: relative;
-	opacity: 0;
-	-webkit-opacity: 0;
-}
-
-.cartel-text {
-	position: absolute;
-	font-weight: 100;
-	text-align: center;
-	left:50%;
-	top:50%;
-	transform:translate(-50%,-50%);
-	-webkit-transform:translate(-50%,-50%);
-}
-
-.cartel:hover {
-	background-color: rgba(47,160,246,0.8)
-}
-
-.center {
-	text-align: center;
-}
-
-.btn {
-	display: inline-block;
-	color: rgb(47,160,246);
-	text-decoration: none;
-	font-style: normal;
-	padding:10px 20px 12px 20px;
-	background-color: white;
-	border: 1px solid rgb(47,160,246);
-}
-
-.cartel h2 {
-	text-transform: uppercase;
-}
-
-footer {
-	clear: both;
-	text-align: center;
-	background-color: whites;
-	height: 70px;
-	font-size: 14px;
-	color: white;
-	padding-top: 45px;
-	color: #999999;
+.hide {
+	display:none;
 }

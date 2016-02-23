@@ -9,14 +9,40 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+	    function UnCryptMailto( s )
+	    {
+	        var n = 0;
+	        var r = "";
+	        for( var i = 0; i < s.length; i++)
+	        {
+	            n = s.charCodeAt( i );
+	            if( n >= 8364 )
+	            {
+	                n = 128;
+	            }
+	            r += String.fromCharCode( n - 1 );
+	        }
+	        return r;
+	    }
+
+	    function linkTo_UnCryptMailto( s )
+	    {
+	        location.href=UnCryptMailto( s );
+	    }
+	 </script>
 </head>
 <body>
 	<header id="launch">
-		<div id="logo-screen">
-			<div id="logo" class="animated fadeIn">Regulardesigner</div>
-			<h1 class="animated fadeIn">Ui designer with development skill<br>for tiny and big screens.</h1>
+		<div id="logo-screen" class="animated fadeIn">
+			<div id="logo">Regulardesigner</div>
+			<h1>Ui designer with development skill<br>for tiny and big screens.</h1>
+			<a class="btn hide" href="/about/index.html">About me</a>
+			<a class="btn hide" href="/about/">Services</a>
+			<a class="btn hide" href="/about/">Portfolio</a>
 		</div>
-		<a href="tel:0685911888" class="phone-call">Call me</a>
+		<a href="javascript:linkTo_UnCryptMailto('nbjmup;ifmmpAsfhvmbseftjhofs/dpn');"  class="contact-email" title="Contact me by email.">Contact me</a>
+		<a href="tel:0685911888" class="phone-call" title="Let's talk about your project.">Call me</a>
 	</header>
 	<script>
 	function launchHeight() {
@@ -28,7 +54,7 @@
 	window.onresize = function(event) {
 		launchHeight();
 	};
-	console.log(location.href)
+	//console.log(location.href)
 	</script>
 </body>
 </html>
