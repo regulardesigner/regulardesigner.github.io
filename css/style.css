@@ -22,11 +22,7 @@ header{
 #logo {
 	width:316px;
 	height:86px;
-	position: absolute;
-	left:50%;
-	top:45%;
-	transform:translate(-50%,-50%);
-	-webkit-transform:translate(-50%,-50%);
+	position: relative;
 	background-size: cover;
 	background-image:url('../img/logo-rd.png');
 }
@@ -36,13 +32,16 @@ h1{
 	font-size: 16px;
 	font-weight: normal;
 	text-align: center;
-	display: inline-block;
-	position: absolute;
+	margin-top:10px;
 	color: white;
 	width: 100%;
-	left:50%;
-	top:60%;
 	font-size:20px;
+}
+
+#logo-screen {
+	position:absolute;
+	left:50%;
+	top:50%;
 	transform:translate(-50%,-50%);
 	-webkit-transform:translate(-50%,-50%);
 }
