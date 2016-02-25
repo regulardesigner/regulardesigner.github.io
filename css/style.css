@@ -92,6 +92,15 @@ h1{
 	right:10px;
 }
 
+#intro>div {
+	background-color:#F5F5F5;
+}
+
+#intro p.desc {
+	font-size:2rem;
+	color:lightgrey;
+}
+
 #services>div {
 	text-align:center;
 }
@@ -113,11 +122,6 @@ h1{
 
 #services p {
 	font-size:1.4rem;
-}
-
-#services p.desc {
-	font-size:2rem;
-	color:lightgrey;
 }
 
 .hide {
