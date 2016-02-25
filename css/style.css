@@ -6,6 +6,7 @@
 html {
 	font-family: 'Roboto', sans-serif;
 	color: #3D3D3D;
+	font-size:62.5%;
 }
 
 header{
@@ -37,24 +38,23 @@ header{
 
 h1{
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 2rem;
 	font-weight: normal;
 	text-align: center;
 	margin-top:10px;
-	color: white;
+	color: #001c28;
 	width: 100%;
-	font-size:20px;
 }
 
 .btn {
 	margin:20px 5px 0px;
 	margin-top:20px;
-	font-size:12px;
+	font-size:1.2rem;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
 	font-style: normal;
-	padding:6px 10px 6px 10px;
+	padding:6px 10px;
 	color:rgb(35,105,154);
 	background-color:rgba(255,255,255,0.7);
 	border-radius:100px;
@@ -62,7 +62,7 @@ h1{
 
 .phone-call, .contact-email {
 	color:black;
-	font-size:14px;
+	font-size:1.4rem;
 	text-decoration:none;
 	line-height:70px;
 	font-family: 'Roboto', sans-serif;
@@ -92,6 +92,45 @@ h1{
 	right:10px;
 }
 
+#services>div {
+	text-align:center;
+}
+
+#services .btn {
+	font-size:1.2rem;
+	padding:6px 15px;
+	color:white;
+	background-color:#0081b5;
+	box-shadow:0 0 10px 0 rgba(0,129,181,0.5);
+	margin-bottom:20px;
+}
+
+#services>div h2 {
+	color:#001c28;
+	font-family: 'Playfair Display', serif;
+	font-size:2.4rem;
+}
+
+#services p {
+	font-size:1.4rem;
+}
+
+#services p.desc {
+	font-size:2rem;
+	color:lightgrey;
+}
+
 .hide {
 	display:none;
+}
+
+hr {
+	border:0;
+	height:1px;
+	background-color:#F5F5F5;
+}
+
+footer {
+	font-size:1.2rem;
+	text-align:center;
 }
