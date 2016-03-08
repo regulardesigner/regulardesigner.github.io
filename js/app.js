@@ -1,33 +1,38 @@
 // encription de l'adresse email
-function UnCryptMailto( s ) 
-{
+function UnCryptMailto( s ) {
     var n = 0;
     var r = "";
-    for( var i = 0; i < s.length; i++)
-    {
+    for( var i = 0; i < s.length; i++) {
         n = s.charCodeAt( i );
-        if( n >= 8364 )
-        {
+        if( n >= 8364 ) {
             n = 128;
         }
         r += String.fromCharCode( n - 1 );
     }
     return r;
 }
-function linkTo_UnCryptMailto( s ){ location.href=UnCryptMailto( s ); }
+function linkTo_UnCryptMailto(s){location.href=UnCryptMailto( s );}
 //
 //
 // dimension de la fenêtre du navigateur
 function divHeight(element) {
-	var h = window.innerHeight;
-	var cssH = h - 2;
-	document.getElementById(element).style['height'] = cssH+"px";
+	if (document.getElementById(element) === null) {
+		return false
+	}else {
+		var h = window.innerHeight;
+		var cssH = h - 2;
+		document.getElementById(element).style['height'] = cssH+"px";
+	}
 }
 divHeight("launch");
+divHeight("intro");
+//divHeight("services");
 divHeight("portfolio");
 //resize event pour dimension de la fenêtre du navigateur
 window.onresize = function(event) {
 	divHeight("launch");
+	divHeight("intro");
+	//divHeight("services");
 	divHeight("portfolio");
 };
 //console.log(location.href)
@@ -81,3 +86,15 @@ function easeOutCuaic(t){
   t--;
   return t*t*t+1;
 }
+
+function testScroll(ev){
+	var h = window.innerHeight/2;
+	if (window.pageYOffset<h) {
+	    document.getElementById("scroll-top").className = "animated fadeOut";
+	}else if(window.pageYOffset>h){
+		document.getElementById("scroll-top").className = "show animated fadeIn";
+    }else {
+    	return false
+    }
+}
+window.onscroll=testScroll

@@ -93,14 +93,22 @@ h1{
 }
 
 #intro {
-	padding:50px 0;
+	position:relative;
 	background-color:#F5F5F5;
+}
+
+#intro > div {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
 }
 
 #intro p.desc {
 	font-size:2rem;
 	color:grey;
-	margin:20px 150px;
+	margin:20px 20px;
 }
 
 #intro > p:first-child {
@@ -125,8 +133,12 @@ h1{
 }
 
 #services > div h3 {
-	color:#001c28;
+	color:#0081b5;
 	font-size:2rem;
+}
+
+#services p.legende {
+	margin:0px 40px;
 }
 
 .title {
@@ -155,11 +167,25 @@ h1{
 }
 
 #scroll-top {
-	display:block;
+	display:none;
 	position:fixed;
-	right:50%;
-	left:50%;
+	right:-1000px;
 	bottom:10px;
+	text-decoration:none;
+	color:black;
+	background-color:rgba(255,255,255,.5);
+	width:auto;
+	padding:0 10px;
+	height:20px;
+	text-align:center;
+	line-height:23px;
+	border-radius:100px;
+	
+}
+
+#scroll-top.show {
+	display:block;
+	right:10px;
 }
 
 .hide {
