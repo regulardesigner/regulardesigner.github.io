@@ -11,7 +11,17 @@
 	</script>
 	<script src="https://cdn.smooch.io/smooch.min.js"></script>
 	<script>
-		Smooch.init({ appToken: '4zjohj1gcft3m7svyaf47ecd5' });
+		Smooch.init({ 
+			appToken: '4zjohj1gcft3m7svyaf47ecd5';
+			embendded : true;
+			customText: {
+        		headerText: 'Parlons un peu de Damien',
+        		inputPlaceholder: 'Entrez votre message...',
+        		sendButtonText: 'Envoyer',
+    }
+		});
+
+		Smooch.render(document.getElementById('chat-container'));
 	</script>
 </body>
 </html>
