@@ -6,14 +6,203 @@
 
 	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<style type="text/css">
+		body {
+			font-family: Roboto, sans-serif;
+		}
+		.sk-logo {display: none;}
+		.buble{display: none;}
+		.buble span, .previous span, .first span {
+			font-size: 20px;
+			background-color:#1F88FF; 
+			padding: 12px 24px; 
+			border-radius:25px; 
+			color: white; 
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		.user {
+			text-align: right;
+		}
+
+		.user span {
+			background-color: red;
+		}
+		
+		.previous span {opacity: .3;}
+		button {
+			border: 1px solid white;
+			background-color: white; 
+			color:#1F88FF;
+			font-size: 16px;
+			border-radius: 16px;
+			padding: 5px;
+			display: block;
+    		width: 90%;
+    		margin: 0 auto;
+    		margin-bottom: 10px;
+    		cursor: pointer;
+		}
+
+		span.talking {
+    		height: 9px;
+    		width: 9px;
+    		float: left;
+    		margin: 5px 1px;
+    		padding: 0px;
+    		background-color: white;
+    		display: block;
+    		border-radius: 50%;
+    		opacity: 0.4;
+    		animation: 1s blink infinite .3333s;
+  		}
+
+  		span.talking:nth-child(1) {animation: 1s blink infinite .3333s;}
+  		span.talking:nth-child(2) {animation: 1s blink infinite .6666s;}
+  		span.talking:nth-child(3) {animation: 1s blink infinite .9999s;}
+
+  		.pop {
+  			transform-origin: 0% 0%;
+  			animation: .4s pop;
+  		}
+
+		@keyframes blink {
+		  50% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes pop {
+			50% {
+				transform: scale(1.04);
+			}
+		}
+
+	</style>
 </head>
 <body>
+	<h1>Regulardesigner.com</h1>
+
+	<div class="buble"><span></span></div>
+	<div class="conversation">
+	</div>
 	</script>
 	<script src="https://cdn.smooch.io/smooch.min.js"></script>
 	<script>
-		Smooch.init({ 
+
+		function hello(){
+			//alert(welcomeText);
+			var helloWorld = ("Hello, Bienvenu sur mon portfolio en ligne.");
+			botBubble(helloWorld, 2000);
+			setTimeout(hello2, 5000);
+		};
+
+		function hello2 (){
+			var text = ("Vous avez la posibilité de découvrir mon <strong>parcoure</strong> et mon <strong>portfolio</strong>.")
+			botBubble(text, 2500);
+			setTimeout(hello3, 5000);
+		};
+
+		function hello3 (){
+			var text = ("Cliquez simplement sur les bouton ci-dessous. <br> <br> <button onclick=\"portfolio()\">Parcoure</button><button onclick=\"portfolio()\">Portfolio</button>");
+			botBubble(text, 5000);
+		};
+
+		function botBubble(txt, time){
+			$('.buble').clone().prependTo('.conversation');
+    		$('.conversation .buble').first().attr('class','first');
+    		$('.first span').first().html('<span class="talking"></span><span class="talking"></span><span class="talking"></span>').show();
+    		$('.conversation .first').not('.first:first-child').attr('class', 'previous');
+    		setTimeout(textBuble, time);
+    		function textBuble (){$('.first span').first().html(txt).addClass('pop');};
+		};
+		
+		function userBuble(txt, time){
+			$('.buble').clone().prependTo('.conversation');
+			$('.conversation .buble').first().attr('class','first').addClass('user');
+			$('.conversation .first').not('.first:first-child').attr('class', 'previous');
+			$('.first span').first().html(txt).addClass('pop');
+		};
+
+		function portfolio(txt){
+			var text2 = ('Portfolio');
+			userBuble (text2, 0);
+			var text = ('Vous voulez découvrir mon portfolio ? <br><br> <button onclick="oui(portfolio)">Oui</button> <button onclick="non()">Non</button>');
+			setTimeout(botBubble(text, 2500), 1000);
+		};
+
+		function portfolioOui(){
+			var text = ('Génial, super. Regardons un peu son portfolio !');
+			userBuble(text, 2500);
+		};
+
+		function oui(){
+			if (portfolio) {
+				//alert('Oui je veux voir ton portfolio');
+				portfolioOui();
+			}
+			else {
+				alert("Oui");
+			}
+			
+		};
+
+		function non (){
+			if (portfolio) {
+				alert('désolé je ne veux pas voir ton portfolio pour l\'instant');
+			}
+			else {
+				alert('Non');
+			}
+		};
+
+		setTimeout(hello, 1500);
+
+		/*Smooch.init({ 
 			appToken: '4zjohj1gcft3m7svyaf47ecd5',
+			customText: {
+        		headerText: 'Comment puis-je vous aidez ?',
+        		introductionText: 'Si Damien n\'est pas là, je réponds à vos questions.',
+        		introAppText: 'Message us below or from your favorite app.',
+        		inputPlaceholder: 'Entrez votre message...',
+        		sendButtonText: 'Envoyer',
+    		}
 		});
+		Smooch.open();
+		/////////////////////////////////////////////////////////////////////
+		// See for more informations : https://github.com/smooch/smooch-js //
+		/////////////////////////////////////////////////////////////////////
+		//
+		// This event triggers when the user sends a message
+		Smooch.on('message:sent', function(message) {
+    		console.log('the user sent a message :', message);
+    		//$(".buble span").html(message.text);
+    		$('.buble').clone().prependTo('.conversation');
+    		$('.conversation .buble').first().attr('class','first');
+    		$('.first span').first().html(message.text);
+    		$('.conversation .first').not('.first:first-child').attr('class', 'previous');
+    		//$('.conversation div').first().attr('class', 'previous');
+    		//$('.buble:first-child').attr('class', 'previous');
+    		//$('.buble').show(300);
+		});
+		// This event triggers when the user receives a message
+		Smooch.on('message:received', function(message) {
+    		console.log('the user received a message', message);
+    		//
+    		$('.buble').clone().prependTo('.conversation');
+    		$('.conversation .buble').first().attr('class','first');
+    		$('.first span').first().html(message.text);
+    		$('.conversation .first').not('.first:first-child').attr('class', 'previous');
+		});
+		// This event triggers when a message was added to the conversation
+		Smooch.on('message', function(message) {
+    		console.log('a message was added to the conversation', message);
+		});*/
 	</script>
 </body>
 </html>
