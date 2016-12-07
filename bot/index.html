@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Regulardesigner - Damien Tailhades Online portfolio</title>
+
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<style type="text/css">
+		* {margin:0; padding:0;}
+		body {
+			border-top:4px solid #1F88FF;
+			font-family: Roboto, sans-serif;
+		}
+		.sk-logo {display: none;}
+		.buble{display: none;}
+		.buble span, .previous span, .first span {
+			font-size: 20px;
+			background-color:#1F88FF; 
+			padding: 12px 24px; 
+			border-radius:25px; 
+			color: white; 
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		.regbot {
+			display: block;
+		}
+
+		.user {
+			display: block;
+			text-align: right;
+		}
+
+		.user span {
+			background-color:#CECECE;
+		}
+		
+		.previous span {opacity: .3;}
+		button {
+			border: 1px solid white;
+			background-color: white; 
+			color:#1F88FF;
+			font-size: 16px;
+			border-radius: 16px;
+			padding: 5px;
+			display: block;
+    		width: 90%;
+    		margin: 0 auto;
+    		margin-bottom: 10px;
+    		cursor: pointer;
+		}
+
+		span.talking {
+    		height: 9px;
+    		width: 9px;
+    		float: left;
+    		margin: 5px 1px;
+    		padding: 0px;
+    		background-color: white;
+    		display: block;
+    		border-radius: 50%;
+    		opacity: 0.4;
+    		animation: 1s blink infinite .3333s;
+  		}
+
+  		span.talking:nth-child(1) {animation: 1s blink infinite .3333s;}
+  		span.talking:nth-child(2) {animation: 1s blink infinite .6666s;}
+  		span.talking:nth-child(3) {animation: 1s blink infinite .9999s;}
+
+  		.pop {
+  			transform-origin: 0% 0%;
+  			animation: .4s pop;
+  		}
+
+		@keyframes blink {
+		  50% {
+		    opacity: 1;
+		  }
+		}
+
+		@keyframes pop {
+			50% {
+				transform: scale(1.04);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Regulardesigner.com</h1>
+	<div class="buble"><span></span></div>
+	<div class="conversation">
+	</div>
+	<script src="js/regbot.js"></script>
+</body>
+</html>
