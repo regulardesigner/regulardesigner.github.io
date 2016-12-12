@@ -17,9 +17,9 @@ function hello3(){
 };
 
 function hello4(){
-	var text = ('Par quoi voulez-vous commencer ? <br><br> <button href="">Son Parcours</button> <button href="">Son Portfolio</button>');
+	var text = ('Par quoi voulez-vous commencer ? <br><br> <button onclick="parcours()">Son Parcours</button> <button onclick="portfolio()">Son Portfolio</button>');
 	botBubble(text, 2500);
-}
+};
 
 
 function portfolio(){
@@ -28,16 +28,23 @@ function portfolio(){
 	setTimeout(botBubble(text, 2500), 1000);
 };
 
-function parcoure(){
-	userBuble ('Parcoure', 0);
-	var botText = ("Damien à commencé son parcoure en 1997. Il était encore au lycée et faisait ses premier siteweb pour une association de théàtre.");
-	setTimeout(botBubble(botText, 2500), 1000);
+function parcours(){
+	userBuble ('Parcours', 0);
+	var text = ("Damien à créé ses premier siteweb en 1997. Il était alors encore au lycée.");
+	setTimeout(botBubble(text, 2500), 1000);
 	setTimeout(parcoure2, 5000);
 };
 
 function parcoure2(){
-	var botText = ("À cette époque les siteweb était codés à la mains.");
+	var botText = ("À cette époque il codais ses projets entièrement à la main.");
 	setTimeout(botBubble(botText, 2500), 1000);
+	setTimeout(parcoure3, 5000);
+};
+
+function parcoure3(){
+	var botText = ("Tous à commencé par la lecture de ce livre : <br><br> <img src=\"https://images-na.ssl-images-amazon.com/images/I/51vWdMqbJ4L._SX327_BO1,204,203,200_.jpg\">");
+	setTimeout(botBubble(botText, 2500), 1000);
+	//setTimeout(parcoure3, 5000);
 };
 
 function portfolioOui(){
@@ -47,7 +54,6 @@ function portfolioOui(){
 function oui(){
 	if (portfolio) {
 		//alert('Oui je veux voir ton portfolio');
-		userBuble('Oui', 2500);
 		portfolioOui();
 	}
 	else {
@@ -94,6 +100,14 @@ function userBuble(txt, time){
 
 setTimeout(hello, 1500);
 
+function displayNav(display) {
+	$( ".nav-content" ).fadeToggle(display, "linear");
+	$( "div.bread" ).toggleClass( "blur" );
+	//return false;
+	//alert('display');
+}
+
+displayNav(false);
 
 
 

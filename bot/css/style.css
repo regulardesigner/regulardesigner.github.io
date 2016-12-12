@@ -1,0 +1,176 @@
+img {
+	vertical-align: sub;
+}
+
+* {
+	outline: none;
+}
+
+body {
+	border-top:4px solid #1F88FF;
+	font-family: Roboto, sans-serif;
+	font-size: 62.5%;
+}
+
+.sk-logo {display: none;}
+.buble{display: none;}
+.buble span, .previous span, .first span {
+	font-size: 2em;
+	background-color:#1F88FF; 
+	padding: 12px 24px; 
+	border-radius:25px; 
+	color: white; 
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.regbot {
+	display: block;
+}
+
+.user {
+	display: block;
+	text-align: right;
+}
+
+h1.header{
+	color: #1F88FF;
+	font-size: 3.5em;
+	margin:80px 0px;
+}
+
+.user span {
+	background-color:#CECECE;
+}
+
+.previous span {opacity: .3;}
+button {
+	border: 1px solid white;
+	background-color: white; 
+	color:#1F88FF;
+	font-size: .9em;
+	border-radius: 16px;
+	padding: 5px;
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+span.talking {
+	height: 9px;
+	width: 9px;
+	float: left;
+	margin: 5px 1px;
+	padding: 0px;
+	background-color: white;
+	display: block;
+	border-radius: 50%;
+	opacity: 0.4;
+	animation: 1s blink infinite .3333s;
+	}
+
+	span.talking:nth-child(1) {animation: 1s blink infinite .3333s;}
+	span.talking:nth-child(2) {animation: 1s blink infinite .6666s;}
+	span.talking:nth-child(3) {animation: 1s blink infinite .9999s;}
+
+	.pop {
+		transform-origin: 0% 0%;
+		animation: .4s pop;
+	}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+	50% {
+		transform: scale(1.04);
+	}
+}
+
+nav {
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menu {
+	bottom: 10px;
+	width: 44px;
+	height: 44px;
+	border: 2px solid #CECECE;
+	border-radius: 100%;
+	background-color: rgba(255,255,255, 0.5);
+	text-align: center;
+}
+
+nav .menu span {
+	display: inline-block;
+	background-color: #CECECE;
+	width: 60%;
+	height: 6px;
+	border-radius: 6px;
+}
+
+nav .menu span:nth-child(1) {
+	margin-top: 9px;
+}
+
+div.nav-content {
+	position: fixed;
+	background-color: rgba(255,255,255,.8);
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.nav-content ul li a {
+	display: block;
+	font-size: 3em;
+	text-decoration: none;
+	color:grey;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.nav-close-btn {
+	font-size: 4em;
+	width:44px;
+	height:44px;
+	position: absolute;
+	top:0;
+	right: 0;
+	line-height: 0;
+
+}
+
+.conversation {
+	margin-bottom: 64px;
+}
+
+
+.blur {
+	  -webkit-filter: blur(5px);
+	  -moz-filter: blur(5px);
+	  -o-filter: blur(5px);
+	  -ms-filter: blur(5px);
+	  filter: blur(5px);
+}
