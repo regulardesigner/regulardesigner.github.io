@@ -1,19 +1,23 @@
+$.getJSON("brain.json", function(obj) {
+    app.phrases = obj.phrases;
+});
+
 function hello(){
 	var text = ("Bienvenu, je suis Reg-bot. <img src=\"img/1f601.png\"/ width=\"24\" align=\"bottom\">");
 	botBubble(text, 2000);
-	setTimeout(hello2, 5000);
+	setTimeout(hello2, 3000);
 };
 
 function hello2(){
 	var text = ("Damien m'a donné pour mission de vous accueillir sur son Portfolio.");
 	botBubble(text, 2500);
-	setTimeout(hello3, 5000);
+	setTimeout(hello3, 3000);
 };
 
 function hello3(){
 	var text = ("Je suis là pour vous fournir des informations sur son travail de designer Ui/Ux et son parcours.");
-	botBubble(text, 5000);
-	setTimeout(hello4, 6000);
+	botBubble(text, 2500);
+	setTimeout(hello4, 3000);
 };
 
 function hello4(){
@@ -23,6 +27,7 @@ function hello4(){
 
 
 function portfolio(){
+	$('.conversation .regbot span').clearQueue();
 	userBuble ('Portfolio', 0);
 	var text = ('Vous voulez découvrir mon portfolio ? <br><br> <button onclick="oui(portfolio)">Oui</button> <button onclick="non()">Non</button>');
 	setTimeout(botBubble(text, 2500), 1000);
@@ -30,13 +35,13 @@ function portfolio(){
 
 function parcours(){
 	userBuble ('Parcours', 0);
-	var text = ("Damien à créé ses premier siteweb en 1997. Il était alors encore au lycée.");
+	var text = ("Damien à créé ses premiers sitewebs en 1997. Il était alors encore au lycée.");
 	setTimeout(botBubble(text, 2500), 1000);
 	setTimeout(parcoure2, 5000);
 };
 
 function parcoure2(){
-	var botText = ("À cette époque il codais ses projets entièrement à la main.");
+	var botText = ("À cette époque il codait ses projets entièrement à la main ! Le pauvre. <img src=\"img/1f602.png\"/ width=\"24\" align=\"bottom\"> ");
 	setTimeout(botBubble(botText, 2500), 1000);
 	setTimeout(parcoure3, 5000);
 };
@@ -99,15 +104,6 @@ function userBuble(txt, time){
 };
 
 setTimeout(hello, 1500);
-
-function displayNav(display) {
-	$( ".nav-content" ).fadeToggle(display, "linear");
-	$( "div.bread" ).toggleClass( "blur" );
-	//return false;
-	//alert('display');
-}
-
-displayNav(false);
 
 
 

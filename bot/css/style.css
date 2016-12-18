@@ -7,9 +7,12 @@ img {
 }
 
 body {
-	border-top:4px solid #1F88FF;
-	font-family: Roboto, sans-serif;
+	font-family: Roboto;
 	font-size: 62.5%;
+}
+
+.wrapper {
+	border-top:4px solid #1F88FF;
 }
 
 .sk-logo {display: none;}
@@ -129,7 +132,7 @@ nav .menu span:nth-child(1) {
 
 div.nav-content {
 	position: fixed;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.4);
 	width: 100%;
 	height: 100%;
 	display: -webkit-box;
@@ -149,6 +152,7 @@ div.nav-content ul li a {
 	margin-top: 60px;
 	margin-bottom: 60px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .nav-close-btn {
@@ -168,9 +172,9 @@ div.nav-content ul li a {
 
 
 .blur {
-	  -webkit-filter: blur(5px);
-	  -moz-filter: blur(5px);
-	  -o-filter: blur(5px);
-	  -ms-filter: blur(5px);
-	  filter: blur(5px);
+	  -webkit-filter: blur(10px);
+	  -moz-filter: blur(10px);
+	  -o-filter: blur(10px);
+	  -ms-filter: blur(10px);
+	  filter: blur(10px);
 }

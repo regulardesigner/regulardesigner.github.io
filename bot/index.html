@@ -8,7 +8,7 @@
 	<meta name="theme-color" content="#1F88FF">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bttr.css" />
@@ -16,7 +16,8 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="bread blur">
+	<div class="wrapper">
+		<div class="bread">
 		<div class="bttr g10 r1 l1">
 			<h1 class="header">Regulardesigner</h1>
 			<div class="buble"><span></span></div>
@@ -24,17 +25,19 @@
 			</div>
 		</div>
 	</div>
+	</div>
 	<a onclick="displayNav()"><nav><div class="menu"><span></span><span></span><span></span></div></nav></a>
 	<div class="nav-content">
 		<button class="nav-close-btn" onclick="displayNav();">&times;</button>
 		<ul>
-			<li><a onclick="portfolio();displayNav();">Portfolio</a></li>
-			<li><a href="">Parcours</a></li>
-			<li><a href="">Funfacs</a></li>
-			<li><a href="">À propos de Reg-bot</a></li>
-			<li><a href="">Contact</a></li>
+			<li><a onclick="navigation('portfolio');">Portfolio</a></li>
+			<li><a onclick="navigation('parcours');">Parcours</a></li>
+			<li><a onclick="navigation('funfacs');">Funfacs</a></li>
+			<li><a onclick="navigation('about');">À propos de Reg-bot</a></li>
+			<li><a onclick="navigation('contact');">Contact</a></li>
 		</ul>
 	</div>
 	<script src="js/regbot.js"></script>
+	<script src="js/nav.js"></script>
 </body>
 </html>
