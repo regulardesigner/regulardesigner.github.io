@@ -1,4 +1,4 @@
-$.getJSON("brain.json", function(obj) {
+$.getJSON("http://www.regulardesigner.com/bot/js/brain.json", function(obj) {
     app.phrases = obj.phrases;
 });
 
