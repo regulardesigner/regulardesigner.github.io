@@ -306,28 +306,44 @@ span.img-shadow {
 	background-color: #067AFF;
 }
 
+.mt10 {
+	margin-top: 1em;
+}
+
+.mt20 {
+	margin-top: 2em;
+}
+
 .mt30 {
-	margin-top: 30px;
+	margin-top: 3em;
 }
 
 .mt50 {
-	margin-top: 50px;
+	margin-top: 5em;
 }
 
 .mt100 {
-	margin-top: 100px;
+	margin-top: 10em;
+}
+
+.mb10 {
+	margin-bottom: 1em;
+}
+
+.mb20 {
+	margin-bottom: 2em;
 }
 
 .mb30 {
-	margin-bottom: 30px;
+	margin-bottom: 3em;
 }
 
 .mb50 {
-	margin-bottom: 50px;
+	margin-bottom: 5em;
 }
 
 .mb100 {
-	margin-bottom: 100px;
+	margin-bottom: 10em;
 }
 
 footer, footer > .row {
@@ -360,7 +376,7 @@ div.nav-content {
 
 div.nav-content ul li a {
 	display: inline-block;
-	font-size: 3em;
+	font-size: 2.5em;
 	text-decoration: none;
 	margin-top: 15px;
 	margin-bottom: 15px;
