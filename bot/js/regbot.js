@@ -1,7 +1,3 @@
-$.getJSON("http://www.regulardesigner.com/bot/js/brain.json", function(obj) {
-    app.phrases = obj.phrases;
-});
-
 function hello(){
 	var text = ("Bienvenu, je suis Reg-bot. <img src=\"img/1f601.png\"/ width=\"24\" align=\"bottom\">");
 	botBubble(text, 2000);
@@ -51,6 +47,12 @@ function parcoure3(){
 	setTimeout(botBubble(botText, 2500), 1000);
 	//setTimeout(parcoure3, 5000);
 };
+
+function parcours4(){
+	var botText = ("…");
+	setTimeout(botBubble(botText, 2500), 1000);
+	//setTimeout(next, 5000);
+}
 
 function portfolioOui(){
 	userBuble('Oui', 2500);

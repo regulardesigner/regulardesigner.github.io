@@ -47,7 +47,7 @@ h1.header{
 }
 
 .previous span {opacity: .3;}
-button {
+button, a.button {
 	border: 1px solid white;
 	background-color: white; 
 	color:#1F88FF;
@@ -112,7 +112,7 @@ nav .menu {
 	bottom: 10px;
 	width: 44px;
 	height: 44px;
-	border: 2px solid #CECECE;
+	border: 2px solid #1F88FF;
 	border-radius: 100%;
 	background-color: rgba(255,255,255, 0.5);
 	text-align: center;
@@ -120,7 +120,7 @@ nav .menu {
 
 nav .menu span {
 	display: inline-block;
-	background-color: #CECECE;
+	background-color: #1F88FF;
 	width: 60%;
 	height: 6px;
 	border-radius: 6px;

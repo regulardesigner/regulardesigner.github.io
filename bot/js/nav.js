@@ -7,6 +7,11 @@ function hideNavOnLoad() {
 	$( ".nav-content" ).hide();
 }
 
+function contactMe() {
+	var botText = ("Vous pouvez contacter Damien sur Messenger. <br> <a class=\"button\" href=\"http://m.me/damientailhades\">Contacter Damien</a>");
+	setTimeout(botBubble(botText, 2500), 1000);
+}
+
 hideNavOnLoad();
 
 function navigation(link) {
@@ -30,6 +35,8 @@ function navigation(link) {
 		case "contact" :
 			console.log("Contact");
 			// type some code here
+			contactMe();
+			displayNav();
 			break;
 		default :
 			// type some default stuff here
