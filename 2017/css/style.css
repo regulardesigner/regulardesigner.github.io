@@ -21,9 +21,9 @@ header a.logo {
 }
 
 .hero{
-	background-image: url(../img/portrait-home-portfolio.jpg);
+	/*background-image: url(../img/portrait-home-portfolio.jpg);
 	background-size: cover;
-	background-position: center center;
+	background-position: center center;*/
 	background-color: #067AFF;
 	color: white;
 }
@@ -233,12 +233,13 @@ span.img-shadow {
 
 .portfolio .btn, .project-page .btn {
 	height:44px;
-	border-radius: 6px;
-	border:none;
-	background-color: rgba(255,255,255, 0.2);
-	color: rgba(255,255,255, 0.7);
-	line-height: 44px;
-	font-size: 1.8em;
+	border-radius: 100px;
+	background-color: rgba(0,0,0, 0.5);
+    color: rgba(255,255,255, .9);
+    line-height: 44px;
+    font-size: 1.8em;
+    box-shadow: rgba(0,0,0,.25) 0 3px 1px 0px;
+    border: .085em solid white;
 }
 
 .blonkapp {
@@ -249,8 +250,6 @@ span.img-shadow {
 	/*background-position: bottom;*/
 	background-size: 60%;
 }
-
-.blonkapp .content {text-align: left;}
 
 .leidz {
 	background-image:url("../img/leidz-bg.png");
@@ -270,8 +269,8 @@ span.img-shadow {
 }
 
 .project-page .showcase{
-	/*background-position: bottom;*/
-	background-size: 60%;
+	background-position: bottom;
+	/*background-size: 60%;*/
 }
 
 .top-100 {
