@@ -28,6 +28,16 @@ header a.logo {
 	color: white;
 }
 
+.a-propos {
+	background-image: url(../img/a-propos-bg.png);
+	background-size: cover;
+	background-position: center center;
+}
+
+.a-propos p {
+	color: white!important;
+}
+
 .hero > .container-fluid > .row {
 	min-height: 500px;
 }
