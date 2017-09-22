@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding :0;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	color: #3D3D3D;
+	font-size:62.5%;
+}
+
+header{
+	position: relative;
+	border-top: 2px solid white;
+	height:600px;
+	background-image:url('../img/bg-header.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	text-align: center;
+	font-size: 0px;
+}
+
+#logo-screen {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+
+#logo {
+	width:316px;
+	height:86px;
+	position: relative;
+	background-size: cover;
+	background-image:url('../img/logo-rd.png');
+	margin:0 auto;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: center;
+	margin-top:10px;
+	color: #001c28;
+	width: 100%;
+}
+
+.btn {
+	margin:20px 5px 0px;
+	margin-top:20px;
+	font-size:1.2rem;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-style: normal;
+	padding:6px 10px;
+	color:rgb(35,105,154);
+	background-color:rgba(255,255,255,0.7);
+	border-radius:100px;
+}
+
+.portfolio-link {
+	font-family: 'Roboto', sans-serif;
+	
+	font-size:1.5rem;
+	padding: 1.5rem;
+	background-color:rgba(255,255,255,0);
+	color: white;
+}
+
+.phone-call, .contact-email {
+	color:black;
+	font-size:1.4rem;
+	text-decoration:none;
+	line-height:70px;
+	font-family: 'Roboto', sans-serif;
+	display:block;
+	position:absolute;
+	background-color:white;
+	height:60px;
+	width:60px;
+	border-radius:100px;
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.5);
+	text-indent:-3000px;
+	background-position:50% 50%;
+	background-repeat: no-repeat;
+}
+
+.phone-call {
+	background-size:65%;
+	background-image: url("../img/phone-call.png");
+	bottom:10px;
+	right:10px;
+}
+
+.contact-email {
+	background-size:70%;
+	background-image: url("../img/contact-email.png");
+	bottom:80px;
+	right:10px;
+}
+
+#intro {
+	position:relative;
+	background-color:#F5F5F5;
+}
+
+#intro > div {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+
+#intro p.desc {
+	font-size:2rem;
+	color:grey;
+	margin:20px 20px;
+}
+
+#intro > p:first-child {
+	margin-top:0;
+}
+
+#services {
+	background-color:white;
+}
+
+#services > div {
+	text-align:center;
+}
+
+#services .btn {
+	font-size:1.2rem;
+	padding:6px 15px;
+	color:white;
+	background-color:#0081b5;
+	box-shadow:0 0 10px 0 rgba(0,129,181,0.5);
+	margin-bottom:20px;
+}
+
+#services > div h3 {
+	color:#0081b5;
+	font-size:2rem;
+}
+
+#services p.legende {
+	margin:0px 40px;
+}
+
+.title {
+	font-family: 'Playfair Display', serif;
+	color:#001c28;
+	color:darkorange;
+	text-align:center;
+	margin-bottom:30px;
+	font-size:3.5em;
+}
+
+#services p {
+	font-size:1.4rem;
+}
+
+#portfolio {
+	background-color:darkorange;
+}
+
+#portfolio .title {
+	color:white;
+}
+
+#portfolio-viewer {
+	height:600px;
+}
+
+#scroll-top {
+	display:none;
+	position:fixed;
+	right:-1000px;
+	bottom:10px;
+	text-decoration:none;
+	color:black;
+	background-color:rgba(255,255,255,.5);
+	width:auto;
+	padding:0 10px;
+	height:20px;
+	text-align:center;
+	line-height:23px;
+	border-radius:100px;
+	
+}
+
+#scroll-top.show {
+	display:block;
+	right:10px;
+}
+
+.hide {
+	display:none;
+}
+
+hr {
+	border:0;
+	height:1px;
+	background-color:#F5F5F5;
+}
+
+footer {
+	font-size:1.2rem;
+	text-align:center;
+}

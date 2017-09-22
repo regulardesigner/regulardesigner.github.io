@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Regulardesigner - Damien Tailhades Online portfolio</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
+	<meta name="description" content="Je suis Damien Tailhades Ui/Ux Designer et Expert Mobile à Paris et en Ile-de-France. Regular Designer est le nom de mon Micro Studio. Vous accompagner dans vos projets d'amélioration Ux et de création d'Ui est mon expertise première. Le mobile est mon écran favori, j'ai une approche Mobile First. Je peux également créer avec vous votre MVP (Minimal Viable Product) pour vous aider à lancer votre projet. Contactez moi et discutons de votre projet.">
+	
+	<meta name="keywords" content="Ui, Ux, Mobile, Application Mobile, MVP, Minimal Viable Product, Design d'expérience utilisateur, Design d'interface utilisateur, Users interface, Users experience, Webdesign, Web design, interface web, interface mobile, ruby, ROR, Ruby on rails">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript">
+	    function UnCryptMailto( s )
+	    {
+	        var n = 0;
+	        var r = "";
+	        for( var i = 0; i < s.length; i++)
+	        {
+	            n = s.charCodeAt( i );
+	            if( n >= 8364 )
+	            {
+	                n = 128;
+	            }
+	            r += String.fromCharCode( n - 1 );
+	        }
+	        return r;
+	    }
+
+	    function linkTo_UnCryptMailto( s )
+	    {
+	        location.href=UnCryptMailto( s );
+	    }
+	 </script>
+</head>
+<body>
+	<header id="launch">
+		<div id="logo-screen" class="animated fadeIn">
+			<div id="logo">Regulardesigner</div>
+			<h1>Le Micro Studio Ui/Ux, Expert&nbsp;Mobile indépendant.</h1>
+			<a class=" btn" href="http://regulardesigner.github.io/pdf/rd-portfolio.pdf" target="_blank">Télécharger mon portfolio</a>
+			<a class="btn hide" href="/about/index.html">About me</a>
+			<a class="btn hide" href="/about/">Services</a>
+			<a class="btn hide" href="/about/">Portfolio</a>
+		</div>
+		<a href="javascript:linkTo_UnCryptMailto('nbjmup;ifmmpAsfhvmbseftjhofs/dpn');"  class="contact-email" title="Contact me by email.">Contact me</a>
+		<a href="tel:0685911888" class="phone-call" title="Let's talk about your project.">Call me</a>
+	</header>
+	<script>
+	function launchHeight() {
+		var h = window.innerHeight;
+		var cssH = h - 2;
+		document.getElementById("launch").style['height'] = cssH+"px";
+	}
+	launchHeight();
+	window.onresize = function(event) {
+		launchHeight();
+	};
+	//console.log(location.href)
+	</script>
+</body>
+</html>
