@@ -62,6 +62,8 @@ a {
 	font-weight: 300;
 	text-decoration: none;
 	color: white;
+	margin-bottom: .5em;
+    margin-top: .5em;
 }
 
 .hero .btn {
