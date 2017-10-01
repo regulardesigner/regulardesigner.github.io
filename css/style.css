@@ -90,7 +90,8 @@ a {
 nav {
 	position: relative;
 	right: 0;
-	padding-right: 1rem;
+	padding-right: 0;
+	cursor: pointer;
 }
 
 nav span {
@@ -430,7 +431,7 @@ div.nav-content ul {
 	height:44px;
 	position: absolute;
 	top:10px;
-	right: 20px;
+	right: 10px;
 	line-height: 0;
 	border: none;
 	background-color: transparent; 
