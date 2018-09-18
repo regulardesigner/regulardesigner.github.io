@@ -78,7 +78,13 @@ a {
 }
 
 .hero .btn {
-	margin-right: 20px;
+	margin-right:0px;
+	color: white;
+}
+
+.hero a {
+	color: #A8D0FF;
+	text-decoration: none;
 }
 
 .responsive-img {
@@ -412,9 +418,8 @@ div.nav-content ul li a {
 	color: #067AFF;
 	font-weight: 800;
 	letter-spacing: -1px;
-	border: 2px solid #067AFF;
 	border-radius: 50px;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 div.nav-content ul li {
@@ -422,7 +427,7 @@ div.nav-content ul li {
 }
 
 div.nav-content ul {
-	margin: 0 60px 0 0;
+	margin: 0 0 0 0;
 }
 
 .nav-close-btn {
