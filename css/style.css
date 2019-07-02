@@ -342,6 +342,14 @@ span.img-shadow {
 	background-color: #16b1e6;
 }
 
+.augment {
+	background-image: url("../img/augment-bg.png");
+}
+
+.augment h2, .augment p {
+	color: #313131!important;
+}
+
 .project-nav {
 	padding-top: 40px;
 	padding-bottom: 30px;
